@@ -1,0 +1,29 @@
+$mainRed : rgba(255, 97, 97);
+h1,h2,h3,Link{
+    margin: 0;
+}
+
+.error{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: $mainRed;
+    font-family: "Montserrat",sans-serif;
+    
+    h1{
+        font-size: 15.0rem;
+        font-weight: 700;
+        margin: 139px 0;
+    }
+    h3{
+        font-size: 36px;
+        margin-bottom: 139px;
+    }
+    &__link{
+        font-size: 18px;
+        color: $mainRed;
+        margin-bottom: 89px;
+    }
+}
