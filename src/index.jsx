@@ -5,13 +5,12 @@ import Home from './pages/Home'
 import Lost from './pages/Lost'
 import About from './pages/About'
 import Accommodation from './pages/Accommodation'
-import AccommodationPage from './components/AccommodationPage'
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Projet8_OpenClassrooms" element={<Home />} />
         <Route path="/lost" element={<Lost />} />
         <Route path='/about' element={<About />} />
         <Route path='/accommodation/:id' element={<Accommodation />}/>
