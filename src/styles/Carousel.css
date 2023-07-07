@@ -35,4 +35,21 @@
   font-size: 24px;
   position: relative;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .rent__pictures {
+    height: 255px;
+  }
+  .rent__pictures .overlay {
+    width: 100%;
+    display: flex;
+  }
+  .rent__pictures .overlay .arrows {
+    height: 40px;
+    top: 47%;
+  }
+  .rent__pictures .overlay .count {
+    display: none;
+  }
 }/*# sourceMappingURL=Carousel.css.map */

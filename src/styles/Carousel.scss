@@ -37,3 +37,22 @@
     }
     
 }
+
+@media screen and (max-width: 900px) {
+
+    .rent__pictures{
+        height: 255px;
+        .overlay{
+            width: 100%;
+            display: flex;
+            .arrows{
+                height: 40px;
+                top: 47%;
+            }
+            .count{
+                display: none;
+            }
+        }
+    }
+
+}

@@ -32,22 +32,23 @@ function AccommodationPage() {
                     <div className='rent__details__title'>
                         <h2>{idSelected.title}</h2>
                         <p>{idSelected.location}</p>
-                    </div>
-                    <div className='rent__details__host'>
-                        <p className='hostName'>{idSelected.host.name}</p>
-                        <div className='pictureContainer'>
-                            <img src={idSelected.host.picture}alt='pitcture'></img>
+                        <div className='tags'> {idSelected.tags.map((tag, index) =>
+                            <div className='tag' key={index}><p>{tag.split(' ')[0]}</p></div>)}
                         </div>
                     </div>
-                </div>
-                <div className='rent__tagsStars'>
-                    <div className='rent__tagsStars__tags'>
-                        {idSelected.tags.map((tag, index) =>
-                        <div className='tag' key={index}><p>{tag.split(' ')[0]}</p></div>)}
+                    
+                    <div className='rent__details__host'>
+                        <div className='rent__details__host__profile'>
+                            <p className='hostName'>{idSelected.host.name}</p>
+                            <div className='pictureContainer'>
+                                <img src={idSelected.host.picture}alt='pitcture'></img>
+                            </div>
+                        </div>
+                        <div className='rent__details__host__stars'>
+                            <StarRating rating={idSelected.rating} />
+                        </div>
                     </div>
-                    <div className='rent__tagsStars__stars'>
-                        <StarRating rating={idSelected.rating} />
-                    </div>
+                    
                 </div>
                 <div className='rent__categories'>
                     <Accordion description={idSelected.description} equipments={idSelected.equipments} />

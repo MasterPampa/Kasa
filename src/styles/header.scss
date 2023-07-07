@@ -6,7 +6,7 @@ header {
     nav {
         display: flex;
         align-items: center;
-        width: 30%;
+        width: 250px;
         ul{
             width: 100%;
             display: flex;
@@ -40,11 +40,12 @@ header {
         
     }
     header {nav{
+        width: 150px;
         ul{
         align-items: center;
         li {
             white-space: nowrap;
-            font-size: 12px;
+            font-size: 16px;
     }}}
 }
 
