@@ -42,6 +42,9 @@
 
     .rent__pictures{
         height: 255px;
+        img{
+            height: 100%;
+        }
         .overlay{
             width: 100%;
             display: flex;
