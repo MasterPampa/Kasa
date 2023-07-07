@@ -1,29 +1,25 @@
-@charset "UTF-8";
 .gallery {
   width: 100%;
   background-color: #F6F6F6;
+  margin: 43px 0 50px 0;
   border-radius: 25px;
-  padding: 50px 0 0 0;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0 0 0;
 }
-
 .gallery__cards {
-  display: grid; /* Utilisation de la grille */
-  grid-template-columns: repeat(3, 1fr); /* Trois colonnes égales */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   width: 90%;
-  grid-column: 1/-1;
-  grid-gap: 50px;
 }
-
 .gallery__card {
-  width: 100%; /* Les cartes occupent toute la largeur de la colonne */
-  padding-bottom: 100%; /* Ratio d'aspect 1:1 pour la hauteur */
+  width: 31%;
+  padding-bottom: 31%;
   border-radius: 10px;
   position: relative;
   transition: all 0.3s ease;
+  margin-bottom: 50px;
 }
 .gallery__card::after {
   content: "";
@@ -57,13 +53,13 @@
   .gallery {
     background-color: white;
     padding: 0;
-    margin-bottom: 50px;
-    grid-template-columns: 100%; /* Une seule colonne pour les écrans étroits */
+    margin-bottom: 0px;
   }
   .gallery__cards {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr; /* Une seule colonne pour les écrans étroits */
   }
   .gallery__card {
     width: 100%;
@@ -72,4 +68,4 @@
   .gallery__card__title {
     font-size: 18px;
   }
-}/*# sourceMappingURL=gallery.css.map */
+}/*# sourceMappingURL=gallery copy.css.map */
