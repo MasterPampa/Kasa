@@ -53,4 +53,19 @@ p {
 .accordion .show {
   margin: 0px;
   opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .accordion {
+    width: 100%;
+  }
+  .accordion__title {
+    font-size: 13px;
+  }
+  .accordion__text {
+    font-size: 9px;
+  }
+  .wrapper {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=guideline.css.map */

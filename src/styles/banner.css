@@ -27,4 +27,18 @@
   font-size: 48px;
   font-weight: 400;
   letter-spacing: 2px;
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    height: 111px;
+  }
+  .banner__title {
+    width: 60%;
+    justify-content: flex-start;
+    left: 16px;
+  }
+  .banner__title h1 {
+    font-size: 24px;
+  }
 }/*# sourceMappingURL=banner.css.map */

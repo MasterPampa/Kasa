@@ -55,3 +55,18 @@ align-items: flex-start;
 }
 
 
+@media screen and (max-width: 900px) {
+
+  .accordion{
+    width: 100%;
+    &__title{
+      font-size: 13px;
+    }
+    &__text{
+      font-size: 9px;
+    }
+  }
+  .wrapper{
+    margin-bottom: 20px;
+  }
+}

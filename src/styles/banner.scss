@@ -28,3 +28,16 @@
         }
     }
 }
+@media screen and (max-width: 900px) {
+    .banner{
+        height: 111px;
+        &__title{
+            width: 60%;
+            justify-content: flex-start;
+            left: 16px;
+            h1{
+                font-size: 24px;
+            }
+        }
+    }
+    }

@@ -1,24 +1,25 @@
 .gallery {
   width: 100%;
   background-color: #F6F6F6;
-  margin: 43px 0 0 0;
+  margin: 43px 0 50px 0;
   border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0 0 0;
   &__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 25px 50px 50px 50px;
-    margin: -15px;
-    width: 100%;
+    justify-content: space-between;
+    width: 90%;
   }
   &__card {
-    width: calc(31% - 30px);
-    padding-bottom: calc(31% - 30px);
+    width: 31%;
+    padding-bottom: 31%;
     border-radius: 10px;
     position: relative;
     transition: all 0.3s ease;
-    margin: 20px;
-    margin-top: 25px;
+    margin-bottom: 50px;
+
     &::after {
       content: "";
       position: absolute;
@@ -47,4 +48,26 @@
       border-radius: 10px;
     }    
   }
+}
+@media screen and (max-width: 900px) {
+
+  .gallery{
+    background-color: white;
+    padding: 0;
+    margin-bottom: 0px;
+    &__cards{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    }
+    &__card{
+      width: 100%;
+      padding-bottom: 100%;
+      &__title{
+        font-size: 18px;
+      }
+    }
+  }
+
 }

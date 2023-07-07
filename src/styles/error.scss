@@ -27,3 +27,20 @@ h1,h2,h3,Link{
         margin-bottom: 89px;
     }
 }
+@media screen and (max-width: 900px) {
+
+    .error{
+        h1{ 
+           font-size: 110px;
+        }
+        h3{
+            font-size: 18px;
+            text-align: center;
+            width: 260px;
+        }
+        &__link{
+            font-size: 14px;
+        }
+    }
+
+}

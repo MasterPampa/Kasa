@@ -1,5 +1,4 @@
 footer {
-  margin-top: 50px;
   width: 100%;
   height: 209px;
   background-color: black;
@@ -9,8 +8,22 @@ footer {
   align-items: center;
   padding-top: 20px;
 }
+footer img {
+  margin-bottom: 25px;
+}
 footer p {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 24px;
+}
+
+@media screen and (max-width: 900px) {
+  footer img {
+    height: 40px;
+  }
+  footer p {
+    font-size: 12px;
+    max-width: 120px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=footer.css.map */

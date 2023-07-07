@@ -7,15 +7,18 @@ header {
 header nav {
   display: flex;
   align-items: center;
+  width: 30%;
 }
 header nav ul {
+  width: 100%;
   display: flex;
   flex-direction: row;
   list-style: none;
   padding: 0px;
 }
 header nav ul li {
-  padding-left: 25px;
+  width: 50%;
+  text-align: right;
   font-size: 24px;
   font-family: "Montserrat", sans-serif;
 }
@@ -25,4 +28,21 @@ header nav ul li .underline {
 header nav ul li a {
   color: rgb(255, 97, 97);
   text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    height: 50px;
+    margin-top: 20px;
+  }
+  header img {
+    height: 50px;
+  }
+  header nav ul {
+    align-items: center;
+  }
+  header nav ul li {
+    white-space: nowrap;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=header.css.map */

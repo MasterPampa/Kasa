@@ -10,10 +10,10 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route exact path="/projet8_openclassrooms/" element={<Home />} />
-        <Route exact path="/projet8_openclassrooms/lost" element={<Lost />} />
-        <Route exact path='/projet8_openclassrooms/about' element={<About />} />
-        <Route exact path='/projet8_openclassrooms/accommodation/:id' element={<Accommodation />}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/lost" element={<Lost />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/accommodation/:id' element={<Accommodation />}/>
       </Routes>
     </Router>
   </React.StrictMode>,

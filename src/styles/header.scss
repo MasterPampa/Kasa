@@ -6,13 +6,16 @@ header {
     nav {
         display: flex;
         align-items: center;
+        width: 30%;
         ul{
+            width: 100%;
             display: flex;
             flex-direction: row;
             list-style: none;
             padding: 0px;
             li{
-                padding-left: 25px;
+                width: 50%;
+                text-align: right;
                 font-size: 24px;
                 font-family: 'Montserrat', sans-serif;
                 .underline{
@@ -25,4 +28,24 @@ header {
             }
         }
     }
+}
+@media screen and (max-width: 900px) {
+
+    header{
+        height: 50px;
+        margin-top: 20px;
+        img{
+            height: 50px;
+        }
+        
+    }
+    header {nav{
+        ul{
+        align-items: center;
+        li {
+            white-space: nowrap;
+            font-size: 12px;
+    }}}
+}
+
 }
