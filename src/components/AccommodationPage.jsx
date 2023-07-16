@@ -1,6 +1,5 @@
 
-import React, { useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import dataArray from '../components/data/housingData.js';
 import '../styles/accommodation.css'
 import StarRating from '../components/StarRating'
@@ -9,22 +8,11 @@ import Carousel from './Carousel.jsx';
 
 function AccommodationPage() {
 
-    const dataIds = dataArray.map(accommodation => accommodation.id)
-    const navigate = useNavigate()
     const { id } = useParams()
       
     const idSelected = dataArray.find(item => item.id === id)
     const pictures = idSelected ? idSelected.pictures : [];
 
-
-    useEffect(() => {
-        if(!dataIds.includes(id)){
-            navigate('/lost')
-        }
-    }, [id, navigate, dataIds])
- 
-
-    if (dataIds.includes(id)){
         return(
             <div className='rent'>
                     <Carousel idSelected={pictures} />
@@ -55,7 +43,6 @@ function AccommodationPage() {
                 </div>
             </div>
         )
-    }
 }
 
 export default AccommodationPage

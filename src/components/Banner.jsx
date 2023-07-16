@@ -1,24 +1,21 @@
-import banner from '../assets/banner.png'
-import banner2 from '../assets/banner2.png'
+import { useLocation } from 'react-router';
+import banner from '../assets/banner.png';
+import banner2 from '../assets/banner2.png';
 
-import '../styles/banner.css'
+import '../styles/banner.css';
 
-function Banner({ currentPage }) {
-    let image = banner
-    let bannerClass = "banner"
-    if (currentPage === 'about') {
-      image = banner2
-      bannerClass = "banner2"
-    }
-    
+function Banner() {
+    const location = useLocation();
+    let image = location.pathname === '/' ? banner : banner2;
+
     return (
-        <div className={bannerClass}>
+        <div className={location.pathname === '/' ? 'banner bannerClass' : 'banner2 bannerClass'}>
             <img src={image} alt="Banniere" />
-            <div className='banner__title'>
+            <div className="banner__title">
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
         </div>
-    )
+    );
 }
 
-export default Banner
+export default Banner;
