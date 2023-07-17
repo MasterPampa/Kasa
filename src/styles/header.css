@@ -43,6 +43,7 @@ header nav ul li a {
   }
   header nav ul {
     align-items: center;
+    gap: 15px;
   }
   header nav ul li {
     white-space: nowrap;
