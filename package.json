@@ -1,7 +1,7 @@
 {
   "name": "kasa",
   "version": "0.1.0",
-  "homepage":"http://MasterPampa.github.io/Projet8_OpenClassrooms",
+  "homepage":".",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
