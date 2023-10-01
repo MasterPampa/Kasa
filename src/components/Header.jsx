@@ -8,13 +8,13 @@ function Header() {
 
     return (
         <header>
-            <Link to='/'>
+            <Link to='/Kasa'>
                 <img src={logo} alt='logo Kasa'></img>
             </Link>
             <nav>
                 <ul>
                     <li>
-                        <Link to='/' className={location.pathname === '/' ? 'underline' : ''}>Accueil</Link>
+                        <Link to='/Kasa' className={location.pathname === '/' ? 'underline' : ''}>Accueil</Link>
                     </li>
                     <li>
                         <Link to='/About' className={location.pathname === '/About' ? 'underline' : ''}>A propos</Link>
