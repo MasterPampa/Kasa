@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/projet8_openclassrooms/static/css/main.90de9ffc.css",
-    "main.js": "/projet8_openclassrooms/static/js/main.85f5f476.js",
-    "static/media/banner2.png": "/projet8_openclassrooms/static/media/banner2.640955dab8c7bff25514.png",
-    "static/media/banner.png": "/projet8_openclassrooms/static/media/banner.19221376a0aa2549c135.png",
-    "index.html": "/projet8_openclassrooms/index.html",
-    "main.90de9ffc.css.map": "/projet8_openclassrooms/static/css/main.90de9ffc.css.map",
-    "main.85f5f476.js.map": "/projet8_openclassrooms/static/js/main.85f5f476.js.map"
+    "main.css": "/kasa/static/css/main.ce70cde4.css",
+    "main.js": "/kasa/static/js/main.3e9ae8af.js",
+    "static/media/banner2.png": "/kasa/static/media/banner2.640955dab8c7bff25514.png",
+    "static/media/banner.png": "/kasa/static/media/banner.19221376a0aa2549c135.png",
+    "index.html": "/kasa/index.html",
+    "main.ce70cde4.css.map": "/kasa/static/css/main.ce70cde4.css.map",
+    "main.3e9ae8af.js.map": "/kasa/static/js/main.3e9ae8af.js.map"
   },
   "entrypoints": [
-    "static/css/main.90de9ffc.css",
-    "static/js/main.85f5f476.js"
+    "static/css/main.ce70cde4.css",
+    "static/js/main.3e9ae8af.js"
   ]
 }
